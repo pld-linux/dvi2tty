@@ -13,7 +13,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Dvi2tty convert TeX dvi output to ascii.
 
 %description -l pl
-Dvi2tty konweruje pliki wynikowe TeX dvi do ascii.
+Dvi2tty konwertuje pliki wynikowe TeX dvi do ascii.
 
 %prep
 %setup -q
