@@ -6,6 +6,7 @@ Release:	1
 License:	non-commercial only
 Group:		Applications/Text
 Group(de):	Applikationen/Text
+Group(fr):	Utilitaires/Texte
 Group(pl):	Aplikacje/Tekst
 Source0:	http://www.mesa.nl/pub/%{name}/%{name}-%{version}.tar.gz
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
