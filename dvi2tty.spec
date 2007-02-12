@@ -1,5 +1,5 @@
 Summary:	DVI to ascii converter
-Summary(pl.UTF-8):   Konwerter DVI do ascii
+Summary(pl.UTF-8):	Konwerter DVI do ascii
 Name:		dvi2tty
 Version:	5.3.1
 Release:	1
