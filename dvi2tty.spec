@@ -2,11 +2,12 @@ Summary:	DVI to ascii converter
 Summary(pl.UTF-8):	Konwerter DVI do ascii
 Name:		dvi2tty
 Version:	5.3.1
-Release:	1
+Release:	2
 License:	GPL v2
 Group:		Applications/Text
 Source0:	http://www.mesa.nl/pub/%{name}/%{name}-%{version}.tar.gz
 # Source0-md5:	315689466848529c2c7e94e11370a7df
+Patch0:		%{name}-ansi-c.patch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -17,6 +18,7 @@ Dvi2tty konwertuje pliki wynikowe TeX dvi do ascii.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 %{__make} \

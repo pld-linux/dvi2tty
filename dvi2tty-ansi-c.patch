@@ -1,0 +1,32 @@
+--- dvi2tty-5.3.1/disdvi.c~	2003-01-23 11:31:00.000000000 +0100
++++ dvi2tty-5.3.1/disdvi.c	2007-02-27 23:53:01.000000000 +0100
+@@ -107,15 +107,7 @@
+  * Function declarations
+  */
+ 
+-#if !defined(THINK_C)
+-char *          malloc          ();
+-#endif
+-
+-#if defined(VMS)
+-                main            (int argc, char ** argv);
+-#else
+-void            main            (int argc, char ** argv);
+-#endif
++int             main            (int argc, char ** argv);
+ void            bop             (void);
+ void            preamble        (void);
+ void            postamble       (void);
+@@ -135,11 +127,7 @@
+  * MAIN --
+  */
+ 
+-#if defined(VMS)
+-     main(int argc, char **argv)
+-#else
+-void main(int argc, char **argv)
+-#endif
++int main(int argc, char **argv)
+ {
+     register int opcode;                /* dvi opcode                        */
+     register int i;
