@@ -1,5 +1,5 @@
-Summary:	DVI to ascii converter
-Summary(pl.UTF-8):	Konwerter DVI do ascii
+Summary:	DVI to ASCII converter
+Summary(pl.UTF-8):	Konwerter DVI do ASCII
 Name:		dvi2tty
 Version:	5.3.1
 Release:	2
@@ -11,10 +11,10 @@ Patch0:		%{name}-ansi-c.patch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Dvi2tty convert TeX dvi output to ascii.
+Dvi2tty converts TeX DVI output to ASCII.
 
 %description -l pl.UTF-8
-Dvi2tty konwertuje pliki wynikowe TeX dvi do ascii.
+Dvi2tty konwertuje pliki wynikowe TeX DVI do ASCII.
 
 %prep
 %setup -q
